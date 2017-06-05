@@ -1,0 +1,60 @@
+/* Fix user-agent */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  font-family:
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    "Lucida Grande",
+    sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#minefield {
+	margin: 10% auto;
+	background-color: gray;
+}
+
+.cell {
+	width: 20px;
+	height:20px;
+	border: 1px solid gray;
+	text-align : center;
+}
+
+.cell.init {
+	background-color: darkgray;
+}
+
+.cell.flag {
+	background-image: url("../images/flag.png");
+	background-position: center;
+	background-size: 20px 20px;
+}
+
+.cell.bomb {
+	background-image: url("../images/bomb.png");
+	background-position: center;
+	background-size: 20px 20px;
+	background-color: red;
+}
+
+.cell.clear {
+	background-color: white;
+}

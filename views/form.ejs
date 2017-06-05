@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+  <meta charset="UTF-8">
+  <title>Minesweeper <%= title %></title>
+  <link rel="stylesheet" href="../public/assets/style/style.css">
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:TaxCatchAll msdt:dt="string">45;#TI</mso:TaxCatchAll>
+<mso:m99485b88215436a82099f8287cba0b0 msdt:dt="string">TI|a7fece31-07e2-4c0a-9f38-c0563f047e67</mso:m99485b88215436a82099f8287cba0b0>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+	
+	<form action="<%= action %>" method="POST">
+        <input type="text" name="username" placeholder="type username">
+        <input type="password" name="password" placeholder="type password">
+        <input type="submit"  value="<%= btnText %>">
+
+        <% if (locals.error) {
+            %> <p class="error"><%= error %></p> <%
+        }%>
+    </form>
+</body>
+</html>
